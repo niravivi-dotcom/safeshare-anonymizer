@@ -1,0 +1,60 @@
+# SafeShare Anonymizer - Core Dependencies
+# Python 3.9+
+
+# ============================================================================
+# UI Framework
+# ============================================================================
+streamlit>=1.31.0              # Web app framework
+streamlit-extras>=0.3.6        # Additional Streamlit components
+
+# ============================================================================
+# Data Processing
+# ============================================================================
+pandas>=2.1.0                  # Data manipulation
+openpyxl>=3.1.0                # Excel file handling (.xlsx)
+xlrd>=2.0.1                    # Excel file handling (.xls)
+
+# ============================================================================
+# PII Detection
+# ============================================================================
+presidio-analyzer>=2.2.33      # Microsoft's PII detection framework
+presidio-anonymizer>=2.2.33    # PII anonymization
+
+# NLP - Natural Language Processing
+spacy>=3.7.0                   # NLP framework
+# Run after install: python -m spacy download en_core_web_sm
+# Run after install: python -m spacy download he_core_news_sm
+
+# ============================================================================
+# Pattern Matching & Text Processing
+# ============================================================================
+regex>=2023.10.0               # Advanced regex (Israeli ID, phones, etc.)
+phonenumbers>=8.13.0           # Phone number parsing
+
+# ============================================================================
+# Anonymization & Fake Data
+# ============================================================================
+Faker>=20.0.0                  # Generate fake data for testing
+hashlib                        # Hashing (built-in, but listed for clarity)
+
+# ============================================================================
+# Cryptography
+# ============================================================================
+cryptography>=41.0.0           # Encryption/decryption (AES-256)
+
+# ============================================================================
+# Utilities
+# ============================================================================
+python-dotenv>=1.0.0           # Environment variables management
+pyyaml>=6.0.1                  # YAML configuration files
+loguru>=0.7.0                  # Better logging
+
+# ============================================================================
+# Development & Testing (optional - see requirements-dev.txt)
+# ============================================================================
+# Uncomment for development:
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.5.0
